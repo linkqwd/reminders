@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Friends app</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="b-layout">
+	<h1 class="b-layout__header"><a href="/friendApp">Friends application</a></h1>
+
+	<div class="b-layout__content-wrapper">
+		<section class="b-layout__filter">
+			<h2 class="b-layout__section-header">Filtering options</h2>
+			<div class="b-layout__filter-row">
+				<p class="b-layout__filter-name">Name</p>
+				<label>
+					<input id="js-name-search-input" class="b-layout__input-text" type="search" placeholder="Enter friend's name">
+				</label>
+			</div>
+			<div class="b-layout__filter-row">
+				<p class="b-layout__filter-name">Gender</p>
+				<label><input class="b-layout__radio-box" type="radio" name="gender" value="all" checked>All</label><br>
+				<label><input class="b-layout__radio-box" type="radio" name="gender" value="male">Male</label><br>
+				<label><input class="b-layout__radio-box" type="radio" name="gender" value="female">Female</label>
+			</div>
+			<h3 class="b-layout__section-header">Sorting options</h3>
+			<div class="b-layout__filter-row">
+				<p class="b-layout__filter-name">Order by name</p>
+				<label><input class="b-layout__radio-box" type="radio" name="order" value="nameAsc">A-Z</label><br>
+				<label><input class="b-layout__radio-box" type="radio" name="order" value="nameDesc">Z-A</label>
+			</div>
+			<div class="b-layout__filter-row">
+				<p class="b-layout__filter-name">Order by age</p>
+				<label><input class="b-layout__radio-box" type="radio" name="order" value="ageAsc">From lowest to greatest</label><br>
+				<label><input class="b-layout__radio-box" type="radio" name="order" value="ageDesc">From greatest to lowest</label>
+			</div>
+		</section>
+
+		<ul class="b-friends-list">
+
+		</ul>
+	</div>
+
+
+	<script type="module" src="js/index.js"></script>
+</body>
+
+</html>
