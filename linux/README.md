@@ -1,5 +1,6 @@
 ## Linux reminders
 
+[Finding in files with grep](https://tecadmin.net/find-all-files-containing-specific-text-on-linux/)
 [filter lines in file](https://www.hippolab.ru/coreutils-komanda-uniq-vyvod-unikalnogo-soderzhimogo)
 
 ### Linux console
