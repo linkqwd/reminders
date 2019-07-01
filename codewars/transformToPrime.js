@@ -1,11 +1,10 @@
 function minimumNumber(numbers) {
-  let n = 0,
+  let n = 0, // n = numbers.reduce((a,b) => a+b);
     counter = 0;
 
   for (let val of numbers) {
     n += val;
   }
-  // or == let n = numbers.reduce((a, b) => a + b) == insted
 
   while (!isPrime(n)) {
     counter++;
