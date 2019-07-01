@@ -78,6 +78,7 @@ const ourDepartments = combineReducers({
 
 // STORE
 const store = createStore(ourDepartments);
+store.subscribe(() => console.log(store.getState()));
 
 store.dispatch(createPolicy("Alex", 20));
 store.dispatch(createPolicy("Jim", 10));
@@ -85,6 +86,3 @@ store.dispatch(createPolicy("Bobx", 40));
 
 store.dispatch(createClaim("Bobx", 60));
 store.dispatch(deletePolicy("Jim"));
-
-store.subscribe(() => console.log(store.getState()));
-console.log(store.getState());
