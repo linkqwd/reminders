@@ -1,14 +1,4 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import { createStore, combineReducers } from "redux";
-
-class App extends Component {
-  render() {
-    return <div>Hello world</div>;
-  }
-}
-
-ReactDOM.render(<App />, document.getElementById("root"));
 
 // (Action Creators)
 const createPolicy = (name, amount) => {
@@ -86,3 +76,4 @@ store.dispatch(createPolicy("Bobx", 40));
 
 store.dispatch(createClaim("Bobx", 60));
 store.dispatch(deletePolicy("Jim"));
+console.log(store.getState());
