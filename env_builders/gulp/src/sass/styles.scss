@@ -1,0 +1,23 @@
+@import '_reset.scss';
+@import '_fonts.scss';
+@import '_vars.scss';
+@import '_mixins.scss';
+
+body {
+  display: flex;
+  font-family: 'firasans';
+  font-size: 18px;
+  background: url('../img/default.jpg') no-repeat center;
+}
+
+@include media(1990px) {
+  body {
+    padding: 20px;
+  }
+}
+
+@include media(1990px) {
+  body {
+    background-size: cover;
+  }
+}

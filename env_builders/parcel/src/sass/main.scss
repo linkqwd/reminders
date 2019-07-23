@@ -1,0 +1,10 @@
+@import '_reset';
+@import '_vars';
+@import '_mixins';
+
+.layout {
+  background: $document-background;
+  color: $base-font-color;
+  font-size: 22px;
+  padding: 22px;
+}
