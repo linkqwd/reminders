@@ -24,4 +24,3 @@ function isPrime(n) {
 console.log(minimumNumber([2, 12, 8, 4, 6]));
 
 // kata: https://www.codewars.com/kata/5a946d9fba1bb5135100007c/train/javascript
-// Solutions:
